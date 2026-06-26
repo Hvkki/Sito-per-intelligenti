@@ -46,3 +46,51 @@ the bottom of the launch cell.
   stale sessions first.
 - Kaggle kernels are temporary — when the session stops, the tunnel and editor stop too.
 - The token is read at runtime from Kaggle Secrets, so it is never committed to Git.
+
+
+## Persistence: making your work survive between sessions
+
+Kaggle is not like rebooting your own computer. When a session ends, it wipes almost
+everything. Only `/kaggle/working/` is kept, and only when you click **Save Version**
+(commit). Installed tools (`code-server`, `kiro-cli`, `ngrok`) and your home directory
+are wiped every session.
+
+So there are two things to handle:
+
+1. **Your files / progress** — the reliable option is Git. Work inside a clone under
+   `/kaggle/working` and `git push` to GitHub to save:
+   ```bash
+   cd /kaggle/working
+   git clone https://github.com/Hvkki/Sito-per-intelligenti.git
+   cd Sito-per-intelligenti
+   # ...work...
+   git add -A && git commit -m "wip" && git push
+   ```
+   (Alternatively, keep files in `/kaggle/working` and use Kaggle's **Save Version** to
+   snapshot them, but Git is more robust and portable.)
+
+2. **The tools** — reinstall them each session with one command. Run this from a
+   notebook cell at session start:
+   ```bash
+   !curl -fsSL https://raw.githubusercontent.com/Hvkki/Sito-per-intelligenti/main/bootstrap.sh | bash
+   ```
+   `bootstrap.sh` installs code-server + kiro-cli + pyngrok, starts code-server and an
+   ngrok tunnel, and prints the URL. Then open the URL and use the VS Code terminal for
+   everything else.
+
+### Kiro CLI login on Kaggle (headless)
+
+The normal browser login fails on Kaggle because it redirects to `localhost:3128` on the
+remote kernel. Use the device flow instead, which gives you a code to enter on your own
+machine:
+
+```bash
+kiro-cli login --license pro \
+  --identity-provider https://d-906673ba2c.awsapps.com/start \
+  --region us-east-1 \
+  --use-device-flow
+```
+
+(For Builder ID / social login instead of an organization: `kiro-cli login --license free --use-device-flow`.)
+
+Note: the Kiro CLI login is also wiped each session, so you re-run this once per session.
