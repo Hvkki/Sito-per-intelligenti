@@ -28,8 +28,17 @@ tunnel, launch the editor — but with the current API and no dead extension cal
    - Get a token: https://dashboard.ngrok.com/get-started/your-authtoken
    - Right sidebar -> Add-ons -> Secrets -> add a secret named `NGROK_TOKEN` and
      attach it to the notebook.
-4. Set your own `PASSWORD` in cell 2, then run the cells in order.
-5. Open the printed `https://...ngrok-free.app` URL and log in with your password.
+4. Run the cells in order.
+5. Open the printed `https://...ngrok-free.app` URL. **No login is required** — the
+   notebook launches code-server with `--auth none`.
+
+## Security warning
+
+This notebook runs code-server with **no password** (`--auth none`). Anyone who has the
+ngrok URL gets full access to the Kaggle session (terminal, files, data), and ngrok URLs
+can be discovered. Use it only for short, throwaway sessions, don't share the link, and
+stop the kernel when done. To require a password instead, uncomment the password block at
+the bottom of the launch cell.
 
 ## Notes
 
