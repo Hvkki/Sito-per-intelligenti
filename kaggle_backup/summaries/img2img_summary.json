@@ -1,0 +1,24 @@
+{
+  "img2img_autumn_s45": {
+    "bytes": 1602490,
+    "std": 69.5,
+    "detail": 4.62,
+    "ocr": "",
+    "blocked": false,
+    "real": true,
+    "server_elapsed": 126.48,
+    "mock": false,
+    "wall": 127.1
+  },
+  "img2img_autumn_s70": {
+    "bytes": 1571006,
+    "std": 69.3,
+    "detail": 4.78,
+    "ocr": "",
+    "blocked": false,
+    "real": true,
+    "server_elapsed": 191.38,
+    "mock": false,
+    "wall": 191.9
+  }
+}

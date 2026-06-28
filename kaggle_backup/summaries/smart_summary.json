@@ -1,0 +1,112 @@
+{
+  "img2img_autumn_s45": {
+    "error": "CUDA out of memory. Tried to allocate 96.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 84.81 MiB is free. Inc"
+  },
+  "img2img_autumn_s70": {
+    "error": "CUDA out of memory. Tried to allocate 96.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 84.81 MiB is free. Inc"
+  },
+  "05_text_fresh_coffee": {
+    "probes": [
+      {
+        "seed": 11,
+        "std": 20.5,
+        "grad": 2.38,
+        "survived": true
+      }
+    ],
+    "std": 33.4,
+    "detail": 16.51,
+    "ocr": "",
+    "blocked": false,
+    "real": true,
+    "seed": 11,
+    "got": true
+  },
+  "06_text_good_morning": {
+    "probes": [
+      {
+        "seed": 11,
+        "std": 8.9,
+        "grad": 0.64,
+        "survived": false
+      },
+      {
+        "seed": 22,
+        "std": 10.3,
+        "grad": 0.71,
+        "survived": false
+      },
+      {
+        "seed": 33,
+        "std": 9.1,
+        "grad": 0.79,
+        "survived": false
+      },
+      {
+        "seed": 44,
+        "std": 13.0,
+        "grad": 1.0,
+        "survived": false
+      },
+      {
+        "seed": 55,
+        "std": 9.6,
+        "grad": 0.56,
+        "survived": false
+      },
+      {
+        "seed": 66,
+        "std": 11.0,
+        "grad": 0.6,
+        "survived": false
+      }
+    ],
+    "got": false
+  },
+  "07_text_thank_you": {
+    "probes": [
+      {
+        "seed": 11,
+        "std": 35.2,
+        "grad": 3.6,
+        "survived": true
+      }
+    ],
+    "std": 44.4,
+    "detail": 3.28,
+    "ocr": "",
+    "blocked": false,
+    "real": true,
+    "seed": 11,
+    "got": true
+  },
+  "08_text_welcome_kitten": {
+    "probes": [
+      {
+        "seed": 11,
+        "std": 28.6,
+        "grad": 0.55,
+        "survived": false
+      },
+      {
+        "seed": 22,
+        "std": 4.5,
+        "grad": 0.24,
+        "survived": false
+      },
+      {
+        "seed": 33,
+        "std": 35.6,
+        "grad": 2.01,
+        "survived": true
+      }
+    ],
+    "std": 52.5,
+    "detail": 4.93,
+    "ocr": "",
+    "blocked": false,
+    "real": true,
+    "seed": 33,
+    "got": true
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "img2img_autumn_s45": {
+    "error": "shape '[1, 32, 32, 2, 32, 2]' is invalid for input of size 204800"
+  },
+  "img2img_autumn_s70": {
+    "error": "shape '[1, 32, 32, 2, 32, 2]' is invalid for input of size 204800"
+  },
+  "06_text_best_wishes": {
+    "got": false
+  }
+}

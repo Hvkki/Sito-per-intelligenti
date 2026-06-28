@@ -1,0 +1,13 @@
+[f2] waiting ready...
+[f2] ready
+[f2] img2img_autumn_s45...
+[f2] img2img_autumn_s45 -> {'error': "shape '[1, 32, 32, 2, 32, 2]' is invalid for input of size 204800"}
+[f2] img2img_autumn_s70...
+[f2] img2img_autumn_s70 -> {'error': "shape '[1, 32, 32, 2, 32, 2]' is invalid for input of size 204800"}
+[f2] 06_text_best_wishes seed=11 EXC 'images'
+[f2] 06_text_best_wishes seed=33 EXC 'images'
+[f2] 06_text_best_wishes seed=7 EXC 'images'
+[f2] 06_text_best_wishes seed=21 EXC 'images'
+[f2] 06_text_best_wishes seed=42 EXC 'images'
+[f2] 06_text_best_wishes seed=99 EXC 'images'
+F2_DONE

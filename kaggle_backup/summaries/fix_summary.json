@@ -1,0 +1,19 @@
+{
+  "img2img_autumn_s45": {
+    "error": "CUDA out of memory. Tried to allocate 96.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 84.81 MiB is free. Including non-PyTorch m"
+  },
+  "img2img_autumn_s70": {
+    "error": "CUDA out of memory. Tried to allocate 96.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 84.81 MiB is free. Including non-PyTorch m"
+  },
+  "05_text_fresh_coffee": {
+    "bytes": 163499,
+    "std": 10.2,
+    "detail": 0.3,
+    "ocr": "Image blocked by safety filter",
+    "blocked": true,
+    "real": false,
+    "elapsed": 402.48,
+    "wall": 402.8,
+    "attempt": 1
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "01_birthday_cake": {
+    "bytes": 1713645,
+    "std": 43.8,
+    "detail": 3.59,
+    "ocr": "",
+    "blocked": false,
+    "real": true,
+    "server_elapsed": 117.45,
+    "mock": false,
+    "wall": 117.9
+  },
+  "02_mountain_lake": {
+    "bytes": 1535083,
+    "std": 66.8,
+    "detail": 4.1,
+    "ocr": "",
+    "blocked": false,
+    "real": true,
+    "server_elapsed": 117.3,
+    "mock": false,
+    "wall": 117.7
+  },
+  "03_fisherman_portrait": {
+    "bytes": 1953689,
+    "std": 46.2,
+    "detail": 6.84,
+    "ocr": "",
+    "blocked": false,
+    "real": true,
+    "server_elapsed": 117.81,
+    "mock": false,
+    "wall": 118.2
+  }
+}
